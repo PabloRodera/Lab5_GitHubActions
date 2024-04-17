@@ -3,7 +3,7 @@ name: Python CI
 on:
   push:
     branches: [ main ] #Cambia "main" si tu rama principal tiene otro nombre.
-  pull request:
+  pull_request:
     branches: [ main ]
 
 jobs:
