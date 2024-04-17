@@ -1,9 +1,9 @@
 import unittest
 from arimetica import sumar, restar, multiplicar, dividir
 
-class TestSumar(unittest.TestCase):
+class TestAritmetica(unittest.TestCase):
     def test_sumar(self):
-        self.assertEqual(sumar(3, 2), 5)
+        self.assertEqual(sumar(3, 10), 13)
         self.assertEqual(sumar(-1, 1), 0)
         self.assertEqual(sumar(-1, -1), -2)
 
@@ -25,6 +25,6 @@ class TestSumar(unittest.TestCase):
 
         with self.assertRaises(ValueError):
             dividir(6, 0)
-            
+
 if __name__ == '__main__':
     unittest.main()
